@@ -3,52 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nevzat Ulaş | Kişisel Web Sitesi</title>
+    <title>Nevzat Ulaş | Kişisel Web Sitesi & Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
         <header class="profile-card">
             <h1 class="name">Nevzat Ulaş</h1>
-            <p class="title">.NET Geliştirici & Siber Güvenlik Analisti</p>
-            <p class="bio">Eskişehir Teknik University bünyesinde eğitimime devam ederken, backend teknolojileri ve siber güvenlik operasyonları üzerine projeler geliştiriyorum.</p>
+            <p class="subtitle">Siber Güvenlik Analisti & .NET Geliştirici</p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Eskişehir / Kayseri</p>
             
             <div class="social-links">
                 <a href="https://github.com/nevztab" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/nevzt" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:nevzat@codrya.com" title="E-posta"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/nevzt/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:nevzat@codrya.com" title="Kurumsal E-posta"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:nevzatulas1955@gmail.com" title="Kişisel E-posta"><i class="fas fa-envelope-open"></i></a>
+                <a href="tel:+905456496776" title="Telefon"><i class="fas fa-phone"></i></a>
             </div>
         </header>
 
         <main class="content">
+            
             <section class="card">
-                <h2><i class="fas fa-code icon"></i> Yetenekler & Teknolojiler</h2>
-                <div class="tags">
-                    <span class="tag">.NET Core</span>
-                    <span class="tag">C#</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">Network Security</span>
-                    <span class="tag">Linux</span>
+                <h2><i class="fas fa-user-tie icon"></i> Kariyer Özeti</h2>
+                <p class="section-text">
+                    Eskişehir Teknik Üniversitesi'nde Siber Güvenlik Analistliği eğitimi alan, kurumsal yazılım geliştirme süreçlerinde (.NET Core, C#, Java Spring Boot) ve startup ekosisteminde (Codrya) aktif deneyim sahibi bir teknoloji profesyoneliyim. Yüksek güvenlik standartlarına uygun yazılım geliştirme, sistem analizi ve ağ güvenliği konularında teknik yetkinliklerimi ve iletişim alanındaki uzmanlıklarımı birleştirerek yazılım projeleri geliştirmeyi hedefliyorum.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2><i class="fas fa-laptop-code icon"></i> Teknik Yetkinlikler</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Programlama Dilleri</h4>
+                        <div class="tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Framework & Araçlar</h4>
+                        <div class="tags">
+                            <span class="tag">.NET Core / ASP.NET</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">Hibernate / Entity</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Maven</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Siber Güvenlik</h4>
+                        <div class="tags">
+                            <span class="tag">Sızma Testleri (Nmap, Burp Suite)</span>
+                            <span class="tag">Web Güvenliği (SQLi, XXE)</span>
+                            <span class="tag">Ağ Güvenliği & Hardening</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Sistem & Donanım</h4>
+                        <div class="tags">
+                            <span class="tag">Kali Linux</span>
+                            <span class="tag">Windows Server</span>
+                            <span class="tag">Raspberry Pi 5</span>
+                            <span class="tag">ESP32 / Arduino</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section class="card">
                 <h2><i class="fas fa-briefcase icon"></i> Deneyim</h2>
-                <div class="timeline-item">
-                    <h3>Codrya — Kurucu Ortak & Geliştirici</h3>
-                    <p class="date">2025 - Günümüz</p>
-                    <p>Yaratıcı reklam çözümleri ve yazılım projeleri üreten teknoloji ajansı.</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Codrya (Yazılım ve Yaratıcı Ajans)</h3>
+                            <span class="badge">2025 – Günümüz</span>
+                        </div>
+                        <p class="role">Co-Founder & Developer</p>
+                        <ul class="bullet-list">
+                            <li>Uçtan uca (Full-Stack) yazılım çözümlerinin geliştirilmesi; performanslı frontend mimarilerinin yanı sıra ölçeklenebilir ve güvenli backend sistemlerinin kurgulanması.</li>
+                            <li>Kullanıcı deneyimi (UX) odaklı arayüz tasarımı ve veritabanı entegrasyonu süreçlerinin yönetilmesi.</li>
+                            <li>Proje yönetimi (Jira/Confluence), müşteri ihtiyaç analizi ve teknik ekip koordinasyonu.</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
+
+            <section class="card">
+                <h2><i class="fas fa-graduation-cap icon"></i> Eğitim</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Eskişehir Teknik Üniversitesi (ESTÜ)</h3>
+                            <span class="badge">2025 – Günümüz</span>
+                        </div>
+                        <p class="role">Bilişim Teknolojileri Meslek Yüksekokulu – Siber Güvenlik Analistliği ve Operatörlüğü</p>
+                        <div class="education-details">
+                            <p><strong>Yazılım & Veri Yönetimi:</strong> Programlama I-II, Veri Tabanı Yönetim Sistemleri, Bilişimde İstatistiksel Analiz.</p>
+                            <p><strong>Siber Güvenlik Operasyonları:</strong> Siber Saldırı ve Savunma Yöntemleri I-II, Yazılım Güvenliği, Veri Güvenliği.</p>
+                            <p><strong>Sistem & Altyapı:</strong> Bilgisayar Ağ Sistemleri, İşletim Sistemlerinin Güvenliği, Bilgisayar Donanımı, Dijital Elektronik.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2><i class="fas fa-project-diagram icon"></i> Projeler & Teknik Çalışmalar</h2>
+                <div class="project-item">
+                    <h3>Siber Vatan Teknik Eğitim ve CTF Programı <span class="project-date">(2025 - 2026)</span></h3>
+                    <p>Ağ güvenliği, sızma testleri ve web uygulama güvenliği eğitimlerinin tamamlanması. CTF yarışmalarında zafiyet tespiti, SQL injection ve network analizi senaryolarında teknik çözümleme.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Heimdall: Güvenlik Odaklı Ev Sunucusu ve Sistem Yönetimi</h3>
+                    <p>Raspberry Pi 5 üzerinde Linux tabanlı kişisel sunucu altyapısının kurgulanması. SSH anahtar tabanlı erişim güvenliği, sistem servislerinin (Systemd) otomasyonu ve ağ trafiği izleme (Wireshark). Python tabanlı güvenli erişim ve veri depolama yapılandırmaları.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Endüstriyel IoT ve Donanım Mühendisliği</h3>
+                    <p><strong>Donanım Müdahalesi:</strong> Anakart seviyesinde ESP32/ESP8266 entegrasyonu ve lehimleme ile uzaktan kontrol çözümleri.<br>
+                    <strong>Endüstriyel Takip:</strong> Plastik enjeksiyon makineleri için gerçek zamanlı verimlilik ve sıcaklık takip sistemleri prototipleme.<br>
+                    <strong>CNC ve Kalıp Tasarımı:</strong> İmalat süreçlerinde teknik problem çözme ve dijitalleşme çalışmaları.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Veri Tabanı Yönetimi, Ağ Altyapısı ve Güvenliği</h3>
+                    <p>İlişkisel veri tabanı tasarımı (RDBMS), ileri seviye normalizasyon (1NF, 2NF, 3NF), .NET Core framework projelerinde Entity Framework kullanarak kurumsal katmanların yapılandırılması. TCP/IP protokol ailesi analizi; Wireshark ile paket izleme, VLAN kurulumları ve ağ izolasyonu sıkılaştırma (Hardening) çalışmaları.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2><i class="fas fa-gamepad icon"></i> İlgi Alanları & Hobiler</h2>
+                <ul class="bullet-list">
+                    <li><strong>Elektronik ve Modifikasyon:</strong> Donanım modifikasyonları ve günlük hayatı kolaylaştıran teknolojiler üzerine kişisel çalışmalar.</li>
+                    <li><strong>Gömülü Sistemler ve Robotik:</strong> Raspberry Pi ve Arduino platformları üzerinde akıllı ev çözümleri ve mikrodenetleyici tabanlı donanım prototipleri geliştirme.</li>
+                    <li><strong>Açık Kaynak Katkıları:</strong> GitHub üzerinde siber güvenlik araçlarını, LLM/SOC ajanlarını ve yeni yazılım kütüphanelerini inceleme, topluluk projelerine teknik destek sağlama.</li>
+                </ul>
+            </section>
+
         </main>
 
         <footer class="footer">
-            <p>&copy; 2026 <a class="codrya-logo" href="https://codrya.com" target="_blank">&lt;/Codrya&gt;</a> | Tüm Hakları Saklıdır.</p>
+            <p>&copy; 2026 Nevzat Ulaş. Powered by Cloudflare Workers / Pages.</p>
         </footer>
     </div>
 

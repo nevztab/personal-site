@@ -48,6 +48,35 @@ body {
     margin-bottom: 4px;
 }
 
+/* Founder of & Logo Bölümü */
+.subtitle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.role-title {
+
+    color: var(--text-muted);
+
+}
+
+.company-logo-link {
+    display: inline-flex;
+    align-items: center;
+    color: #f3f0e6;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.company-logo-link:hover{
+    opacity: 0.8;
+}
+
 .subtitle {
     font-size: 1.25rem;
     color: var(--accent-blue);
@@ -262,6 +291,13 @@ body {
     margin-top: 40px;
     font-size: 0.85rem;
     color: var(--text-muted);
+}
+
+.codrya-logo {
+    font-weight: 700;
+    color: #f3f0e6;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Mobil Cihaz Duyarlılığı */

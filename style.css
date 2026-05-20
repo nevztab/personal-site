@@ -1,0 +1,139 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a; /* Slate 900 - Modern Gece Mavisi */
+    color: #e2e8f0; /* Slate 200 - Yumuşak Beyaz */
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Konteyner */
+.container {
+    max-width: 650px;
+    width: 100%;
+}
+
+/* Profil Kartı */
+.profile-card {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 1.1rem;
+    color: #38bdf8; /* Gökyüzü Mavisi */
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.bio {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+}
+
+/* Sosyal Medya İkonları */
+.social-links a {
+    color: #94a3b8;
+    font-size: 1.5rem;
+    margin: 0 12px;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #38bdf8;
+}
+
+/* İçerik Kartları */
+.card {
+    background-color: #1e293b; /* Slate 800 */
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #f1f5f9;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+    color: #38bdf8;
+}
+
+/* Yetenek Etiketleri (Tags) */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: #0f172a;
+    border: 1px solid #475569;
+    color: #cbd5e1;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Zaman Çizelgesi (Timeline) */
+.timeline-item h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f1f5f9;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 6px;
+}
+
+.timeline-item p:last-child {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #475569;
+}
+
+.codrya-logo {
+    font-weight: 700;
+    color: #f3f0e6;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+}

@@ -6,7 +6,7 @@
     --text-primary: #f1f5f9;  /* Ana Beyaz Yazı */
     --text-muted: #94a3b8;    /* Gri Soluk Yazı */
     --accent-blue: #38bdf8;    /* .NET & Siber Güvenlik Tematik Mavisi */
-    --accent-glow: rgba(56, 189, 248, 0.15);
+    --accent-glow: rgba(56, 189, 248, 0.08);
 }
 
 * {
@@ -25,28 +25,19 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 40px 20px;
+    overflow-x: hidden;
+    animation: backgroundPulse 12s ease-in-out infinite;
 }
 
 /* Konteyner Mimari */
 .container {
     max-width: 750px;
     width: 100%;
+    animation: fadeInUp 0.9s ease-out both;
 }
 
 /* Üst Profil Alanı */
-.profile-card {
-    text-align: center;
-    margin-bottom: 35px;
-    padding: 10px;
-}
-
-.name {
-    font-size: 2.8rem;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    color: #ffffff;
-    margin-bottom: 4px;
-}
+/* Updated profile card styles are defined later with animation */
 
 /* Founder of & Logo Bölümü */
 .subtitle-container {
@@ -70,11 +61,13 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
-
-.company-logo-link:hover{
-    opacity: 0.8;
+.company-logo-link:hover {
+    opacity: 1;
+    transform: scale(1.02);
+    color: #ffffff;
 }
 
 .subtitle {
@@ -82,6 +75,8 @@ body {
     color: var(--accent-blue);
     font-weight: 500;
     margin-bottom: 6px;
+    animation: fadeInUp 0.9s ease-out both;
+    animation-delay: 0.2s;
 }
 
 .location {
@@ -102,6 +97,8 @@ body {
     justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
+    animation: fadeInUp 0.9s ease-out both;
+    animation-delay: 0.4s;
 }
 
 .social-links a {
@@ -122,20 +119,10 @@ body {
 .social-links a:hover {
     color: var(--accent-blue);
     border-color: var(--accent-blue);
-    box-shadow: 0 0 12px var(--accent-glow);
     transform: translateY(-2px);
 }
 
 /* Kart Yapısı (Grid/Bölümler) */
-.card {
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: 14px;
-    padding: 28px;
-    margin-bottom: 24px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
 .card h2 {
     font-size: 1.35rem;
     font-weight: 600;
@@ -163,6 +150,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    animation: fadeInUp 0.9s ease-out both;
+    animation-delay: 0.7s;
 }
 
 .skill-category h4 {
@@ -170,29 +159,25 @@ body {
     color: #94a3b8;
     margin-bottom: 8px;
     font-weight: 500;
+    user-select: none;
+    -webkit-user-select: none;
 }
-
 /* Teknolojik Etiketler (Tags) */
 .tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-}
-
-.tag {
-    background-color: rgba(34, 49, 77, 0.4);
-    border: 1px solid var(--border-color);
-    color: #cbd5e1;
-    padding: 5px 14px;
-    border-radius: 8px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    font-family: 'Fira Code', monospace;
+    align-items: flex-start;
 }
 
 /* Deneyim & Eğitim Zaman Çizelgesi */
 .timeline-item {
     padding-bottom: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateX(2px);
 }
 
 .timeline-header {
@@ -259,6 +244,12 @@ body {
     margin-bottom: 20px;
     padding-bottom: 15px;
     border-bottom: 1px dashed var(--border-color);
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateX(4px);
+    border-color: rgba(56, 189, 248, 0.15);
 }
 
 .project-item:last-child {
@@ -291,6 +282,9 @@ body {
     margin-top: 40px;
     font-size: 0.85rem;
     color: var(--text-muted);
+    opacity: 0.95;
+    animation: fadeInUp 0.9s ease-out both;
+    animation-delay: 0.6s;
 }
 
 .codrya-logo {
@@ -298,6 +292,155 @@ body {
     color: #f3f0e6;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+}
+
+.profile-card {
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 10px;
+    animation: floatIn 1s ease-out both;
+}
+
+.name {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    margin-bottom: 4px;
+    text-shadow: 0 10px 30px rgba(56, 189, 248, 0.1);
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(18px);
+    animation: fadeInUp 0.75s ease-out both;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease, background-color 0.35s ease;
+}
+
+.content .card:nth-of-type(1) { animation-delay: 0.15s; }
+.content .card:nth-of-type(2) { animation-delay: 0.25s; }
+.content .card:nth-of-type(3) { animation-delay: 0.35s; }
+.content .card:nth-of-type(4) { animation-delay: 0.45s; }
+.content .card:nth-of-type(5) { animation-delay: 0.55s; }
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0px 10px rgba(56, 191, 248, 0.122);
+    border-color: rgba(56, 191, 248, 0.51);
+}
+
+.card h2 {
+    transition: 0.3s ease;
+}
+
+.card:hover h2 {
+    font-size: 1.45rem;
+    
+}
+
+
+
+.card h2 .icon {
+    animation: floatIcon 3.8s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+.card:hover h2 .icon {
+    transform: translateY(-2px) scale(1.5);
+}
+
+
+.tag {
+    background-color: rgba(34, 49, 77, 0.4);
+    border: 1px solid var(--border-color);
+    color: #cbd5e1;
+    padding: 5px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: 'Fira Code', monospace;
+    display: inline-flex;
+    align-items: center;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.35;
+    cursor: default;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tag:hover {
+    transform: translateY(-1px);
+    border-color: rgba(56, 189, 248, 0.18);
+}
+
+.social-links a {
+    color: var(--text-muted);
+    font-size: 1.4rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    will-change: transform, box-shadow;
+}
+
+.social-links a:hover {
+    color: var(--accent-blue);
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatIcon {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes backgroundPulse {
+    0%, 100% {
+        background-color: #0b0f19;
+    }
+    50% {
+        background-color: #10172b;
+    }
 }
 
 /* Mobil Cihaz Duyarlılığı */

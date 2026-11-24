@@ -1,163 +1,883 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nevzat Ulaş | Kişisel Web Sitesi & Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Nevzat Ulaş | Yazılım Geliştirici | Siber Güvenlik Analisti | EsCyberSec | Codrya</title>
+    <meta name="title" content="Nevzat Ulaş | Yazılım Geliştirici | Siber Güvenlik Analisti | EsCyberSec | Codrya">
+    <meta name="description" content="Nevzat Ulaş kişisel portfolyosu. Yazılım Geliştirici ve Siber Güvenlik Analisti. Eskişehir Siber Güvenlik Topluluğu (EsCyberSec) Başkan Yardımcısı, Codrya kurucusu. C# .NET, Python, web geliştirme, siber güvenlik, Heimdall projesi, 3D modelleme ve plastik enjeksiyon imalat tecrübesi.">
+    <meta name="keywords" content="Nevzat Ulaş, nevzat ulas, nevztab, EsCyberSec, Eskişehir Siber Güvenlik Topluluğu, escybersec başkan yardımcısı, Codrya, codrya-dev, yazılım geliştirici, siber güvenlik analisti, software developer, cybersecurity analyst, postgresql, c# .net, python, heimdall, docker, 3d modelleme, plastik enjeksiyon, cnc imalatı">
+    <meta name="author" content="Nevzat Ulaş">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="theme-color" content="#0d0d0d">
+    <meta name="color-scheme" content="dark">
+    <link rel="canonical" href="https://nevzatulas.dev/">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Nevzat Ulaş | Yazılım Geliştirici ve Siber Güvenlik Analisti">
+    <meta property="og:description" content="Eskişehir Siber Güvenlik Topluluğu (EsCyberSec) Başkan Yardımcısı ve Codrya kurucusu Nevzat Ulaş'ın resmi portfolyo sitesi.">
+    <meta property="og:url" content="https://nevzatulas.dev/">
+    <meta property="og:site_name" content="Nevzat Ulaş">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="profile:first_name" content="Nevzat">
+    <meta property="profile:last_name" content="Ulaş">
+    <meta property="profile:username" content="nevztab">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nevzat Ulaş | Yazılım Geliştirici ve Siber Güvenlik Analisti">
+    <meta name="twitter:description" content="Yazılım geliştirme, C# .NET, Python, siber güvenlik analizi ve Heimdall projesi.">
+
+    <!-- Structured Data (JSON-LD) for Google Knowledge Graph & Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://nevzatulas.dev/#person",
+          "name": "Nevzat Ulaş",
+          "alternateName": ["Nevzat Ulas", "nevztab"],
+          "jobTitle": "Yazılım Geliştirici ve Siber Güvenlik Analisti",
+          "description": "Nevzat Ulaş; Eskişehir Siber Güvenlik Topluluğu (EsCyberSec) Başkan Yardımcısı, Codrya kurucusu, yazılım geliştirici ve siber güvenlik analistidir.",
+          "url": "https://nevzatulas.dev/",
+          "email": "mailto:nevzat@codrya.com",
+          "telephone": "+905456496776",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Eskişehir",
+            "addressRegion": "Eskişehir / Kayseri",
+            "addressCountry": "TR"
+          },
+          "worksFor": [
+            {
+              "@type": "Organization",
+              "name": "Eskişehir Siber Güvenlik Topluluğu (EsCyberSec)",
+              "url": "https://escybersec.com/",
+              "description": "Eskişehir Bağımsız Siber Güvenlik Topluluğu"
+            },
+            {
+              "@type": "Organization",
+              "name": "Codrya",
+              "description": "Yazılım Geliştirme İnisiyatifi"
+            }
+          ],
+          "sameAs": [
+            "https://codrya.com",
+            "https://github.com/nevztab",
+            "https://escybersec.com"
+          ],
+          "knowsAbout": [
+            "Yazılım Geliştirme",
+            "Siber Güvenlik Analizi",
+            "PostgreSQL",
+            "C# / .NET",
+            "Python",
+            "JavaScript",
+            "Heimdall Akıllı Ev ve Ağ Platformu",
+            "Eskişehir Siber Güvenlik Topluluğu",
+            "EsCyberSec",
+            "Codrya",
+            "Docker",
+            "3D Kasa Modelleme",
+            "Plastik Enjeksiyon İmalatı",
+            "CNC İşleme"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://nevzatulas.dev/#website",
+          "url": "https://nevzatulas.dev/",
+          "name": "Nevzat Ulaş | Kişisel Portfolyo",
+          "description": "Nevzat Ulaş Resmi Web Sitesi - Yazılım Geliştirme ve Siber Güvenlik Analizi",
+          "inLanguage": "tr-TR",
+          "author": {
+            "@id": "https://nevzatulas.dev/#person"
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Google Fonts: Montserrat (Headings) + Ubuntu (Body) + JetBrains Mono (Code/Metrics) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Codrya Brand Design System CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <!-- Background Atmosphere -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-radial" aria-hidden="true"></div>
 
-    <div class="container">
-        <header class="profile-card">
-            <h1 class="name">Nevzat Ulaş</h1>
-            <div class="subtitle-container">
-                <span class="role-title">Founder of</span>
-                <a href="https://codrya.com" target="_blank" class="company-logo-link">
-                    &lt;/Codrya&gt;
-                </a>
-            </div>
-            <p class="subtitle">Siber Güvenlik Analisti & .NET Geliştirici</p>
-            <p class="location"><i class="fas fa-map-marker-alt"></i> Eskişehir / Kayseri</p>
+    <!-- Navigation Header -->
+    <header>
+        <nav class="codrya-nav" aria-label="Ana Gezinti Menüsü">
+            <a href="#home" class="logo-container">
+                <div class="logo-flame-dot"></div>
+                <div class="logo-text">Nevzat <span>Ulaş</span></div>
+            </a>
             
-            <div class="social-links">
-                <a href="https://github.com/nevztab" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/nevzt/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:nevzat@codrya.com" title="Kurumsal E-posta"><i class="fas fa-envelope"></i></a>
-                <a href="mailto:nevzatulas1955@gmail.com" title="Kişisel E-posta"><i class="fas fa-envelope-open"></i></a>
-                <a href="tel:+905456496776" title="Telefon"><i class="fas fa-phone"></i></a>
-            </div>
-        </header>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#experience">Deneyim</a></li>
+                <li><a href="#skills">Yetenekler</a></li>
+                <li><a href="#projects">Projeler</a></li>
+                <li><a href="#contact" class="nav-btn-contact"><i class="fas fa-paper-plane"></i> İletişim</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" aria-label="Menüyü Aç/Kapat"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
 
-        <main class="content">
-            
-            <section class="card">
-                <h2><i class="fas fa-user-tie icon"></i> Kariyer Özeti</h2>
-                <p class="section-text">
-                    Eskişehir Teknik Üniversitesi'nde Siber Güvenlik Analistliği eğitimi alan, kurumsal yazılım geliştirme süreçlerinde (.NET Core, C#, Java Spring Boot) ve startup ekosisteminde (Codrya) aktif deneyim sahibi bir teknoloji profesyoneliyim. Yüksek güvenlik standartlarına uygun yazılım geliştirme, sistem analizi ve ağ güvenliği konularında teknik yetkinliklerimi ve iletişim alanındaki uzmanlıklarımı birleştirerek yazılım projeleri geliştirmeyi hedefliyorum.
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Nevzat Ulaş</h1>
+                
+                <div class="hero-typewriter-box" aria-live="polite">
+                    <span class="typewriter-prompt">&gt;</span>
+                    <span id="typewriter"></span><span class="cursor">_</span>
+                </div>
+                
+                <p class="hero-description">
+                    <strong>Yazılım Geliştirici</strong> ve <strong>Siber Güvenlik Analisti</strong> olarak çalışıyorum. <strong>Eskişehir Siber Güvenlik Topluluğu (EsCyberSec)</strong> bünyesinde Başkan Yardımcısı ve <strong>Codrya</strong> kurucusuyum. Modern web teknolojileri, C#/.NET ve Python ile backend servisleri ve güvenli sistemler geliştiriyorum. Ayrıca 3D CAD modelleme ile prototip kasa üretimi yapıyor; babamdan öğrendiğim plastik enjeksiyon ve CNC imalat tecrübesini projelerime aktarıyorum.
                 </p>
-            </section>
+                
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> Projeler</a>
+                    <a href="#experience" class="btn btn-secondary"><i class="fas fa-briefcase"></i> Deneyim</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="far fa-envelope"></i> İletişim</a>
+                </div>
+                
+                <div class="hero-socials" aria-label="Sosyal Bağlantılar">
+                    <a href="https://codrya.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Codrya (codrya.com)"><i class="fas fa-globe"></i></a>
+                    <a href="https://github.com/nevztab" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profilim (nevztab)"><i class="fab fa-github"></i></a>
+                    <a href="https://escybersec.com" target="_blank" rel="noopener noreferrer" class="social-link" title="EsCyberSec Topluluk Sayfası"><i class="fas fa-shield-halved"></i></a>
+                    <a href="mailto:nevzat@codrya.com" class="social-link" title="E-Posta: nevzat@codrya.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <!-- Terminal & Stats Panel -->
+            <div class="hero-panel reveal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <div class="terminal-dot active"></div>
+                        <div class="terminal-dot"></div>
+                        <div class="terminal-dot"></div>
+                    </div>
+                    <div class="terminal-title">nevzat@workspace:~# durum</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="t-prompt">&gt;</span>
+                        <span class="t-key">Ad Soyad:</span>
+                        <span class="t-val">Nevzat Ulaş</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="t-prompt">&gt;</span>
+                        <span class="t-key">Codrya:</span>
+                        <span class="t-val highlight">Kurucu ve Yazılım Geliştirici</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="t-prompt">&gt;</span>
+                        <span class="t-key">EsCyberSec:</span>
+                        <span class="t-val">Topluluk Başkan Yardımcısı</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="t-prompt">&gt;</span>
+                        <span class="t-key">ESTÜ:</span>
+                        <span class="t-val">Siber Güvenlik Analisti</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="t-prompt">&gt;</span>
+                        <span class="t-key">Konum:</span>
+                        <span class="t-val">Eskişehir / Türkiye</span>
+                    </div>
+                    
+                    <div class="terminal-status-grid">
+                        <div class="status-card">
+                            <div class="status-label">Backend Servisleri</div>
+                            <div class="status-value">.NET / C#, Python</div>
+                        </div>
+                        <div class="status-card">
+                            <div class="status-label">Veritabanı</div>
+                            <div class="status-value">PostgreSQL</div>
+                        </div>
+                        <div class="status-card">
+                            <div class="status-label">Ön Yüz Geliştirme</div>
+                            <div class="status-value">JavaScript, React</div>
+                        </div>
+                        <div class="status-card">
+                            <div class="status-label">Güvenlik Analizi</div>
+                            <div class="status-value">Zafiyet ve Ağ Analizi</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <section class="card">
-                <h2><i class="fas fa-laptop-code icon"></i> Teknik Yetkinlikler</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h4>Programlama Dilleri</h4>
-                        <div class="tags">
-                            <span class="tag">C#</span>
-                            <span class="tag">Java</span>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <span class="section-tag">Geliştirici Profili</span>
+                <h2 class="section-title">Hakkımda ve <span>Çalışma Alanlarım.</span></h2>
+                <p class="section-subtitle">
+                    Temiz kod yazımı, güvenli sistem mimarileri, siber güvenlik analizi ve fiziksel üretim tecrübesi.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="card about-narrative reveal">
+                    <h3>Yazılım Geliştirme ve Güvenlik Yaklaşımım</h3>
+                    <p>
+                        Merhaba, ben <strong>Nevzat Ulaş</strong>. Yazılım geliştirici ve siber güvenlik analisti olarak çalışıyorum. Geliştirdiğim projelerde modern backend ve web teknolojilerini, güvenlik analizi prensipleriyle birleştirerek sağlam ve hızlı sistemler kuruyorum.
+                    </p>
+                    <p>
+                        Backend tarafında C# / .NET ve Python ile modüler ve güvenli servisler geliştiriyor, veritabanı mimarisinde PostgreSQL ile sağlam veri modelleri kurguluyorum. Ön yüz tarafında ise sade ve kullanıcı odaklı arayüzler üretiyorum.
+                    </p>
+                    <p>
+                        <strong>Eskişehir Siber Güvenlik Topluluğu (EsCyberSec)</strong> bünyesinde <strong>Başkan Yardımcısı</strong> olarak topluluk etkinliklerini, eğitim programlarını ve CTF yarışmalarını koordine ediyorum.
+                    </p>
+                    <p>
+                        Yazılım geliştirmenin yanı sıra fiziksel üretim tarafında aktif olarak yer alıyorum. 3D CAD modelleme ile cihazlar için <strong>prototip kasa üretimi</strong> gerçekleştiriyorum. Baba mesleği olan <strong>plastik enjeksiyon</strong> ve <strong>CNC imalatı</strong> süreçlerinde edindiğim tecrübe sayesinde kalıp tasarımı, malzeme yapısı ve seri imalat kurallarına uygun donanım kasalamaları geliştirebiliyorum.
+                    </p>
+                    
+                    <div class="brand-quote">
+                        <p>&gt; "Talk is cheap. Show me the code." <span style="color:var(--color-soft-linen-muted); font-size:0.82rem; margin-left:6px;">— Linus Torvalds</span></p>
+                    </div>
+                </div>
+                
+                <div class="about-metrics reveal" style="transition-delay: 0.15s;">
+                    <div class="metric-box">
+                        <div class="metric-num">Codrya</div>
+                        <div class="metric-title">Kurucu ve Yazılım Geliştirici</div>
+                        <div class="metric-desc">Kurumsal yazılım çözümleri, modern web uygulamaları ve güvenli backend servisleri.</div>
+                    </div>
+                    
+                    <div class="metric-box">
+                        <div class="metric-num">EsCyberSec</div>
+                        <div class="metric-title">Topluluk Başkan Yardımcısı</div>
+                        <div class="metric-desc">Siber güvenlik eğitimleri, CTF içerikleri ve topluluk yönetimi.</div>
+                    </div>
+
+                    <div class="metric-box">
+                        <div class="metric-num">ESTÜ</div>
+                        <div class="metric-title">Siber Güvenlik Analisti</div>
+                        <div class="metric-desc">Eskişehir Teknik Üniversitesi siber güvenlik eğitimi ve laboratuvar pratikleri.</div>
+                    </div>
+                    
+                    <div class="metric-box">
+                        <div class="metric-num">3D ve İmalat</div>
+                        <div class="metric-title">Plastik Enjeksiyon ve Kasa</div>
+                        <div class="metric-desc">Baba mesleği kalıplama, CNC işleme ve donanım prototip kasalama tecrübesi.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Roles Section -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <span class="section-tag">Kariyer ve Sorumluluklar</span>
+                <h2 class="section-title">Deneyim <span>Alanlarım.</span></h2>
+                <p class="section-subtitle">
+                    Yazılım geliştirme çalışmaları, topluluk görevleri, siber güvenlik analizi ve üretim süreçleri.
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <!-- Codrya -->
+                <article class="timeline-card reveal" style="">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-role">Kurucu ve Yazılım Geliştirici</h3>
+                            <a href="https://codrya.com" target="_blank" rel="noopener noreferrer" class="timeline-org">
+                                <i class="fas fa-globe"></i> Codrya (codrya.com)
+                            </a>
+                        </div>
+                        <span class="timeline-badge badge-codrya">Yazılım Geliştirme</span>
+                    </div>
+                    
+                    <div class="timeline-meta">
+                        <span><i class="far fa-calendar-alt"></i> 2025 - Güncel</span>
+                        <span><i class="fas fa-code"></i> C# / .NET Core, Backend</span>
+                    </div>
+                    
+                    <p class="timeline-desc">
+                        Codrya çatısı altında kurumsal ihtiyaçlara yönelik özel yazılım çözümleri, bakım-onarım yönetim sistemleri ve web uygulamaları geliştiriyorum.
+                    </p>
+                    
+                    <ul class="timeline-points">
+                        <li>İlişkisel veritabanı mimarisi kurgusu, veri modellemesi ve performans yönetimi.</li>
+                        <li>C# / .NET Core ile çok katmanlı kurumsal bakım-onarım platformunun geliştirilmesi.</li>
+                        <li>RESTful API mimarileri ve güvenli backend servislerinin tasarımı.</li>
+                    </ul>
+                    
+                    <div class="tag-list">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">C# / .NET Core</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">Backend Geliştirme</span>
+                    </div>
+                </article>
+
+                <!-- EsCyberSec Topluluk Yönetimi -->
+                <article class="timeline-card reveal" style="transition-delay: 0.1s;">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-role">Topluluk Başkan Yardımcısı</h3>
+                            <a href="https://escybersec.com" target="_blank" rel="noopener noreferrer" class="timeline-org">
+                                <i class="fas fa-shield-alt"></i> Eskişehir Siber Güvenlik Topluluğu (EsCyberSec)
+                            </a>
+                        </div>
+                        <span class="timeline-badge badge-topluluk">Topluluk Yönetimi</span>
+                    </div>
+                    
+                    <div class="timeline-meta">
+                        <span><i class="far fa-calendar-alt"></i> 2026 - Güncel</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Eskişehir / Türkiye</span>
+                    </div>
+                    
+                    <p class="timeline-desc">
+                        Eskişehir Siber Güvenlik Topluluğu bünyesinde Başkan Yardımcısı olarak görev yapıyorum. Topluluk stratejisini, üye koordinasyonunu ve teknik etkinlik planlamalarını yönetiyorum.
+                    </p>
+                    
+                    <ul class="timeline-points">
+                        <li>Siber güvenlik atölyeleri, seminerler ve uygulamalı eğitim programlarının organizasyonu.</li>
+                        <li>Topluluk üyelerine yönelik çalışma gruplarının ve mentörlük süreçlerinin yürütülmesi.</li>
+                        <li>Üniversite ve sektör profesyonelleri ile teknik iş birliklerinin koordine edilmesi.</li>
+                    </ul>
+                    
+                    <div class="tag-list">
+                        <span class="tag">Topluluk Liderliği</span>
+                        <span class="tag">Etkinlik Yönetimi</span>
+                        <span class="tag">Eğitim Koordinasyonu</span>
+                        <span class="tag">EsCyberSec</span>
+                    </div>
+                </article>
+
+                <!-- ESTÜ Siber Güvenlik Analizi -->
+                <article class="timeline-card reveal" style="transition-delay: 0.2s;">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-role">Siber Güvenlik Analisti</h3>
+                            <a href="https://www.eskisehir.edu.tr/" target="_blank" rel="noopener noreferrer" class="timeline-org">
+                                <i class="fas fa-graduation-cap"></i> Eskişehir Teknik Üniversitesi (ESTÜ)
+                            </a>
+                        </div>
+                        <span class="timeline-badge badge-research">Eğitim ve Akademik</span>
+                    </div>
+                    
+                    <div class="timeline-meta">
+                        <span><i class="far fa-calendar-alt"></i> ESTÜ • Siber Güvenlik Analizi ve Operatörlüğü</span>
+                        <span><i class="fas fa-search"></i> Zafiyet ve Ağ Analizi</span>
+                    </div>
+                    
+                    <p class="timeline-desc">
+                        Eskişehir Teknik Üniversitesi'ndeki (ESTÜ) siber güvenlik eğitimim ve laboratuvar çalışmalarım kapsamında; web uygulama güvenliği, ağ trafiği incelemeleri ve zafiyet analizi üzerine uygulamalı pratikler yürütüyorum.
+                    </p>
+                    
+                    <ul class="timeline-points">
+                        <li>Web uygulama zafiyet analizleri ve güvenlik denetimleri.</li>
+                        <li>Wireshark ile ağ trafiği incelemesi ve protokol analizi çalışmaları.</li>
+                        <li>Docker kullanarak izole laboratuvar ve test senaryolarının kurgulanması.</li>
+                    </ul>
+                    
+                    <div class="tag-list">
+                        <span class="tag">ESTÜ</span>
+                        <span class="tag">Siber Güvenlik Analisti</span>
+                        <span class="tag">Ağ Analizi</span>
+                        <span class="tag">Zafiyet Taraması</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                </article>
+
+                <!-- 3D Prototip Kasa Modelleme -->
+                <article class="timeline-card reveal" style="transition-delay: 0.3s;">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-role">3D Prototip Kasa Modelleme</h3>
+                            <span class="timeline-org" style="color:var(--color-floral-white);">
+                                <i class="fas fa-cube"></i> Donanım ve Elektronik Kasalama
+                            </span>
+                        </div>
+                        <span class="timeline-badge badge-research">Tasarım ve Prototip</span>
+                    </div>
+                    
+                    <div class="timeline-meta">
+                        <span><i class="far fa-calendar-alt"></i> Donanım Projeleri</span>
+                        <span><i class="fas fa-wrench"></i> 3D CAD, 3D Yazıcı</span>
+                    </div>
+                    
+                    <p class="timeline-desc">
+                        Elektronik devreler, IoT donanımları ve sensör sistemleri için 3D CAD ortamında ölçülü ve dayanıklı prototip kasa tasarımları yapıyorum.
+                    </p>
+                    
+                    <ul class="timeline-points">
+                        <li>Elektronik kart ölçülerine tam oturan ergonomik prototip kasa tasarımı.</li>
+                        <li>3D yazıcı ile hızlı prototip üretimi ve saha montaj testleri.</li>
+                        <li>Isı dağılımı ve port erişimlerine uygun mekanik modellemeler.</li>
+                    </ul>
+                    
+                    <div class="tag-list">
+                        <span class="tag">3D CAD Modelleme</span>
+                        <span class="tag">Prototip Kasa</span>
+                        <span class="tag">3D Yazıcı Üretimi</span>
+                        <span class="tag">Donanım Tasarımı</span>
+                    </div>
+                </article>
+
+                <!-- Plastik Enjeksiyon ve CNC İmalatı -->
+                <article class="timeline-card reveal" style="transition-delay: 0.4s;">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-role">Plastik Enjeksiyon ve CNC İmalatı</h3>
+                            <span class="timeline-org" style="color:var(--color-soft-linen-muted);">
+                                <i class="fas fa-industry"></i> Saha ve Atölye İmalat Tecrübesi
+                            </span>
+                        </div>
+                        <span class="timeline-badge badge-research">Üretim ve İmalat</span>
+                    </div>
+                    
+                    <div class="timeline-meta">
+                        <span><i class="far fa-calendar-alt"></i> Baba Mesleği Tecrübesi</span>
+                        <span><i class="fas fa-cogs"></i> Kalıplama, Enjeksiyon, CNC</span>
+                    </div>
+                    
+                    <p class="timeline-desc">
+                        Babamdan öğrendiğim plastik enjeksiyon ve CNC imalat tecrübesi sayesinde parçaların seri üretim aşamalarını ve kalıp dinamiklerini bilerek tasarım yapıyorum.
+                    </p>
+                    
+                    <ul class="timeline-points">
+                        <li>Plastik enjeksiyon kalıp mantığı, çıkış açıları ve et kalınlığı kurallarına hakimiyet.</li>
+                        <li>CNC işleme toleransları, malzeme dayanımı ve talaşlı imalat süreçleri bilgisi.</li>
+                        <li>Fiziksel üretimi bilen bir yazılımcı olarak donanım projelerine pratik imalat çözümleri üretme.</li>
+                    </ul>
+                    
+                    <div class="tag-list">
+                        <span class="tag">Plastik Enjeksiyon</span>
+                        <span class="tag">Kalıp Tasarımı</span>
+                        <span class="tag">CNC İmalatı</span>
+                        <span class="tag">Seri Üretim</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <span class="section-tag">Yetenekler</span>
+                <h2 class="section-title">Teknik <span>Uzmanlıklarım.</span></h2>
+                <p class="section-subtitle">
+                    Yazılım geliştirme araçları, veritabanı yönetimi, siber güvenlik analizi ve üretim bilgisi.
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                
+                <div class="skill-card reveal">
+                    <i class="fas fa-server skill-icon"></i>
+                    <h3>Backend Geliştirme</h3>
+                    <p>C# / .NET Core ve Python ile güvenli, ölçeklenebilir RESTful API servisleri ve kurumsal iş mantığı mimarileri.</p>
+                    <div class="tag-list">
+                        <span class="tag">C# / .NET Core</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">RESTful API</span>
+                        <span class="tag">Entity Framework</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal" style="transition-delay: 0.1s;">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3>Veritabanı Yönetimi</h3>
+                    <p>İlişkisel veri modelleme, indeksleme, sorgu optimizasyonu ve PostgreSQL ile güvenli veritabanı kurgusu.</p>
+                    <div class="tag-list">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">İlişkisel Modelleme</span>
+                        <span class="tag">Optimizasyon</span>
+                        <span class="tag">Veri Güvenliği</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal" style="transition-delay: 0.2s;">
+                    <i class="fas fa-shield-virus skill-icon"></i>
+                    <h3>Siber Güvenlik Analizi</h3>
+                    <p>Web uygulama güvenlik denetimleri, zafiyet analizi, Wireshark ile ağ protokol incelemeleri ve Kali Linux araçları.</p>
+                    <div class="tag-list">
+                        <span class="tag">Zafiyet Taraması</span>
+                        <span class="tag">Ağ Analizi</span>
+                        <span class="tag">Wireshark</span>
+                        <span class="tag">Kali Linux</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal" style="transition-delay: 0.3s;">
+                    <i class="fab fa-react skill-icon"></i>
+                    <h3>Ön Yüz Geliştirme</h3>
+                    <p>JavaScript (ES6+), React.js ve modern CSS standartları ile duyarlı, ergonomik ve kullanıcı dostu arayüzler.</p>
+                    <div class="tag-list">
+                        <span class="tag">JavaScript (ES6+)</span>
+                        <span class="tag">React.js</span>
+                        <span class="tag">HTML5 / CSS3</span>
+                        <span class="tag">Duyarlı Tasarım</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal" style="transition-delay: 0.4s;">
+                    <i class="fas fa-box skill-icon"></i>
+                    <h3>Konteyner Sistemleri</h3>
+                    <p>Docker ve Docker Compose ile uygulamaların ve test ortamlarının konteynerize edilmesi; Linux yönetimi ve Git kullanımı.</p>
+                    <div class="tag-list">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Docker Compose</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Git / GitHub</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal" style="transition-delay: 0.5s;">
+                    <i class="fas fa-cube skill-icon"></i>
+                    <h3>3D Kasa Modelleme</h3>
+                    <p>Elektronik donanımlar için 3D CAD ile prototip kasa tasarımı, montaj yuvaları ve 3D yazıcı üretim süreçleri.</p>
+                    <div class="tag-list">
+                        <span class="tag">3D CAD</span>
+                        <span class="tag">Prototip Kasa</span>
+                        <span class="tag">3D Yazıcı</span>
+                        <span class="tag">Donanım Kasalama</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal" style="transition-delay: 0.6s;">
+                    <i class="fas fa-industry skill-icon"></i>
+                    <h3>Plastik Enjeksiyon İmalatı</h3>
+                    <p>Babadan edinilen saha tecrübesiyle plastik enjeksiyon kalıp mantığı, hammadde özellikleri ve seri üretim kuralları.</p>
+                    <div class="tag-list">
+                        <span class="tag">Plastik Enjeksiyon</span>
+                        <span class="tag">Kalıp Prensipleri</span>
+                        <span class="tag">Seri İmalat</span>
+                        <span class="tag">Hammadde Bilgisi</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal" style="transition-delay: 0.7s;">
+                    <i class="fas fa-cogs skill-icon"></i>
+                    <h3>CNC İşleme Süreçleri</h3>
+                    <p>Talaşlı imalat yöntemleri, CNC parça işleme prensipleri, tolerans yönetimi ve fiziksel montaj standartları.</p>
+                    <div class="tag-list">
+                        <span class="tag">CNC İşleme</span>
+                        <span class="tag">Talaşlı İmalat</span>
+                        <span class="tag">Tolerans Yönetimi</span>
+                        <span class="tag">Parça Üretimi</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <span class="section-tag">Seçkin Projeler</span>
+                <h2 class="section-title">Geliştirdiğim <span>Sistemler.</span></h2>
+                <p class="section-subtitle">
+                    Ağ ve akıllı ev platformları, kurumsal bakım-onarım sistemleri, güvenlik laboratuvarları ve imalat çalışmaları.
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Codrya.BakimOnarim -->
+                <article class="project-card reveal">
+                    <div class="project-badge-bar">
+                        <span class="project-category">Kurumsal Yazılım</span>
+                        <span class="project-status">Aktif</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Codrya.BakimOnarim Platformu</h3>
+                        <p style="color:var(--color-flame); font-weight:600; margin-bottom:12px;">Bakım ve Onarım Yönetim Sistemi</p>
+                        <p>
+                            İşletmeler için makine parkurunu, periyodik bakım takvimlerini ve teknik arıza bildirim süreçlerini uçtan uca yöneten PostgreSQL tabanlı kurumsal yazılım çözümü.
+                        </p>
+                        <div class="tag-list" style="margin-bottom: 20px;">
+                            <span class="tag">C# / .NET Core</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Entity Framework</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://codrya.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                codrya.com'u İncele <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Codrya QR Menü ve POS -->
+                <article class="project-card reveal" style="transition-delay: 0.1s;">
+                    <div class="project-badge-bar">
+                        <span class="project-category">Codrya • Restoran Çözümleri</span>
+                        <span class="project-status">Aktif</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Codrya QR Menü ve POS Sistemi</h3>
+                        <p style="color:var(--color-flame); font-weight:600; margin-bottom:12px;">Dijital Menü, Sipariş ve Adisyon Çözümü</p>
+                        <p>
+                            Kafeler ve restoranlar için masadan QR menü ile sipariş verme, hızlı adisyon takibi, mutfak yönlendirmesi ve PostgreSQL tabanlı stok yönetimini bir araya getiren modern yazılım platformu.
+                        </p>
+                        <div class="tag-list" style="margin-bottom: 20px;">
+                            <span class="tag">QR Menü</span>
+                            <span class="tag">Adisyon POS</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Restoran Yazılımı</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://codrya.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                codrya.com'u İncele <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Heimdall Project (ÖNE ÇIKAN!) -->
+                <article class="project-card reveal" style="border-left: 4px solid var(--color-flame); transition-delay: 0.2s;">
+                    <div class="project-badge-bar">
+                        <span class="project-category" style="color:var(--color-flame); font-weight:700;">★ Öne Çıkan Proje</span>
+                        <span class="project-status">Geliştirildi</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Heimdall</h3>
+                        <p style="color:var(--color-flame); font-weight:600; margin-bottom:12px;">Akıllı Ev ve Ağ İzleme Platformu</p>
+                        <p>
+                            Ağdaki bağlı cihazları, Access Point (AP) bağlantılarını ve akıllı ev otomasyonlarını tek bir merkezi dashboard üzerinden izleyen, durum takibi ve yönetim sağlayan kapsamlı yazılım sistemi.
+                        </p>
+                        <div class="tag-list" style="margin-bottom: 20px;">
+                            <span class="tag">Ağ İzleme</span>
+                            <span class="tag">Access Point (AP)</span>
+                            <span class="tag">Akıllı Ev / IoT</span>
+                            <span class="tag">Dashboard UI</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-footer">
+                            <span style="font-family:var(--font-mono); font-size:0.85rem; color:var(--color-flame);">
+                                <i class="fas fa-shield-halved"></i> Heimdall Platformu
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- EsCyberSec CTF Lab -->
+                <article class="project-card reveal" style="transition-delay: 0.3s;">
+                    <div class="project-badge-bar">
+                        <span class="project-category">Güvenlik Laboratuvarı</span>
+                        <span class="project-status">Test Edildi</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>EsCyberSec CTF Laboratuvarı</h3>
+                        <p style="color:var(--color-flame); font-weight:600; margin-bottom:12px;">Konteynerize Güvenlik Test Ortamı</p>
+                        <p>
+                            Siber güvenlik eğitimleri ve CTF yarışmaları için Docker ile izole edilmiş, web uygulama zafiyet simülasyonları ve otomatik test senaryoları.
+                        </p>
+                        <div class="tag-list" style="margin-bottom: 20px;">
+                            <span class="tag">Docker Compose</span>
                             <span class="tag">Python</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">SQL</span>
+                            <span class="tag">Web Güvenliği</span>
+                            <span class="tag">CTF Lab</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://escybersec.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                EsCyberSec Topluluğu <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h4>Framework & Araçlar</h4>
-                        <div class="tags">
-                            <span class="tag">.NET Core / ASP.NET</span>
-                            <span class="tag">Spring Boot</span>
-                            <span class="tag">Hibernate / Entity</span>
-                            <span class="tag">Git</span>
-                            <span class="tag">Maven</span>
+                </article>
+
+                <!-- Kuluçka Makinesi Otomasyonu (v2.0) -->
+                <article class="project-card reveal" style="transition-delay: 0.4s;">
+                    <div class="project-badge-bar">
+                        <span class="project-category">Gömülü Sistem • IoT</span>
+                        <span class="project-status">GitHub</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Kuluçka Makinesi Otomasyonu (v2.0)</h3>
+                        <p style="color:var(--color-flame); font-weight:600; margin-bottom:12px;">Mikrodenetleyici Tabanlı İklimlendirme ve Kontrol</p>
+                        <p>
+                            C++ ve PlatformIO ile geliştirilen; RTC saat modülü, hassas sıcaklık ve nem takibi, otomatik çevirme döngüleri ve I2C ekranlı durum yönetimi sunan gömülü kontrol sistemi.
+                        </p>
+                        <div class="tag-list" style="margin-bottom: 20px;">
+                            <span class="tag">C++</span>
+                            <span class="tag">PlatformIO</span>
+                            <span class="tag">Gömülü Sistemler</span>
+                            <span class="tag">IoT Otomasyon</span>
+                            <span class="tag">Sensör Kontrolü</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/nevztab/Kulucka-makinasi-v2.0" target="_blank" rel="noopener noreferrer" class="project-link">
+                                GitHub'da İncele <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h4>Siber Güvenlik</h4>
-                        <div class="tags">
-                            <span class="tag">Sızma Testleri (Nmap, Burp Suite)</span>
-                            <span class="tag">Web Güvenliği (SQLi, XXE)</span>
-                            <span class="tag">Ağ Güvenliği & Hardening</span>
+                </article>
+
+                <!-- 3D Prototip Kasa ve İmalat -->
+                <article class="project-card reveal" style="transition-delay: 0.5s;">
+                    <div class="project-badge-bar">
+                        <span class="project-category">Fiziksel Üretim</span>
+                        <span class="project-status">Tasarım ve Üretim</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>3D Prototip Kasa ve Kalıp İmalatı</h3>
+                        <p style="color:var(--color-flame); font-weight:600; margin-bottom:12px;">Donanım Kasalama ve Plastik Enjeksiyon</p>
+                        <p>
+                            Elektronik modüller için 3D CAD ortamında özel prototip kasa tasarımları; plastik enjeksiyon kalıplama ve CNC işleme standartlarına uygun parça üretimi.
+                        </p>
+                        <div class="tag-list" style="margin-bottom: 20px;">
+                            <span class="tag">3D CAD Modelleme</span>
+                            <span class="tag">Prototip Kasa</span>
+                            <span class="tag">Plastik Enjeksiyon</span>
+                            <span class="tag">CNC İmalatı</span>
+                        </div>
+                        <div class="project-footer">
+                            <span style="font-family:var(--font-mono); font-size:0.85rem; color:var(--color-soft-linen-muted);">
+                                CAD • 3D Baskı • Kalıplama
+                            </span>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h4>Sistem & Donanım</h4>
-                        <div class="tags">
-                            <span class="tag">Kali Linux</span>
-                            <span class="tag">Windows Server</span>
-                            <span class="tag">Raspberry Pi 5</span>
-                            <span class="tag">ESP32 / Arduino</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <span class="section-tag">İletişim</span>
+                <h2 class="section-title">Bana <span>Ulaşın.</span></h2>
+                <p class="section-subtitle">
+                    Yazılım projeleri, siber güvenlik analizi, EsCyberSec topluluk çalışmaları veya yeni iş birlikleri için doğrudan yazabilirsiniz.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="card reveal">
+                    <h3>İletişim Kanalları</h3>
+                    <p style="color:var(--color-soft-linen); margin-bottom: 20px;">
+                        Projeleriniz veya sorularınız için aşağıdaki kanallardan doğrudan benimle iletişime geçebilirsiniz.
+                    </p>
+                    
+                    <div class="contact-info-list">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div>
+                                <div class="contact-label">Doğrudan E-Posta</div>
+                                <div class="contact-val"><a href="mailto:nevzat@codrya.com">nevzat@codrya.com</a></div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fab fa-github contact-icon"></i>
+                            <div>
+                                <div class="contact-label">GitHub</div>
+                                <div class="contact-val"><a href="https://github.com/nevztab" target="_blank" rel="noopener noreferrer">github.com/nevztab</a></div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-globe contact-icon"></i>
+                            <div>
+                                <div class="contact-label">Codrya</div>
+                                <div class="contact-val"><a href="https://codrya.com" target="_blank" rel="noopener noreferrer">codrya.com</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-shield-alt contact-icon"></i>
+                            <div>
+                                <div class="contact-label">Topluluk</div>
+                                <div class="contact-val"><a href="https://escybersec.com" target="_blank" rel="noopener noreferrer">escybersec.com (EsCyberSec)</a></div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt contact-icon"></i>
+                            <div>
+                                <div class="contact-label">Telefon ve Destek</div>
+                                <div class="contact-val"><a href="tel:+905456496776">+90 545 649 67 76</a></div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div>
+                                <div class="contact-label">Konum</div>
+                                <div class="contact-val">Eskişehir / Kayseri / Türkiye</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="card">
-                <h2><i class="fas fa-briefcase icon"></i> Deneyim</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-header">
-                            <h3>Codrya (Yazılım ve Yaratıcı Ajans)</h3>
-                            <span class="badge">2025 – Günümüz</span>
+                
+                <div class="card reveal" style="transition-delay: 0.15s;">
+                    <h3>Mesaj Bırakın</h3>
+                    <form class="contact-form" autocomplete="on">
+                        <div class="form-group">
+                            <label class="form-label" for="contact-name">Adınız Soyadınız</label>
+                            <input type="text" id="contact-name" name="name" class="form-control" placeholder="Adınız Soyadınız" required>
                         </div>
-                        <p class="role">Co-Founder & Developer</p>
-                        <ul class="bullet-list">
-                            <li>Uçtan uca (Full-Stack) yazılım çözümlerinin geliştirilmesi; performanslı frontend mimarilerinin yanı sıra ölçeklenebilir ve güvenli backend sistemlerinin kurgulanması.</li>
-                            <li>Kullanıcı deneyimi (UX) odaklı arayüz tasarımı ve veritabanı entegrasyonu süreçlerinin yönetilmesi.</li>
-                            <li>Proje yönetimi (Jira/Confluence), müşteri ihtiyaç analizi ve teknik ekip koordinasyonu.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="card">
-                <h2><i class="fas fa-graduation-cap icon"></i> Eğitim</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-header">
-                            <h3>Eskişehir Teknik Üniversitesi (ESTÜ)</h3>
-                            <span class="badge">2025 – Günümüz</span>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-email">E-Posta Adresiniz</label>
+                            <input type="email" id="contact-email" name="email" class="form-control" placeholder="ornek@alanadiniz.com" required>
                         </div>
-                        <p class="role">Bilişim Teknolojileri Meslek Yüksekokulu – Siber Güvenlik Analistliği ve Operatörlüğü</p>
-                        <div class="education-details">
-                            <p><strong>Yazılım & Veri Yönetimi:</strong> Programlama I-II, Veri Tabanı Yönetim Sistemleri, Bilişimde İstatistiksel Analiz.</p>
-                            <p><strong>Siber Güvenlik Operasyonları:</strong> Siber Saldırı ve Savunma Yöntemleri I-II, Yazılım Güvenliği, Veri Güvenliği.</p>
-                            <p><strong>Sistem & Altyapı:</strong> Bilgisayar Ağ Sistemleri, İşletim Sistemlerinin Güvenliği, Bilgisayar Donanımı, Dijital Elektronik.</p>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-subject">Konu</label>
+                            <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="Yazılım Projesi / EsCyberSec / Diğer" required>
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-message">Mesajınız</label>
+                            <textarea id="contact-message" name="message" class="form-control" placeholder="Mesajınızı buraya yazabilirsiniz..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+                            <i class="fas fa-paper-plane"></i> Mesajı Gönder
+                        </button>
+                    </form>
                 </div>
-            </section>
+            </div>
+        </section>
+    </main>
 
-            <section class="card">
-                <h2><i class="fas fa-project-diagram icon"></i> Projeler & Teknik Çalışmalar</h2>
-                <div class="project-item">
-                    <h3>Siber Vatan Teknik Eğitim ve CTF Programı <span class="project-date">(2025 - 2026)</span></h3>
-                    <p>Ağ güvenliği, sızma testleri ve web uygulama güvenliği eğitimlerinin tamamlanması. CTF yarışmalarında zafiyet tespiti, SQL injection ve network analizi senaryolarında teknik çözümleme.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Heimdall: Güvenlik Odaklı Ev Sunucusu ve Sistem Yönetimi</h3>
-                    <p>Raspberry Pi 5 üzerinde Linux tabanlı kişisel sunucu altyapısının kurgulanması. SSH anahtar tabanlı erişim güvenliği, sistem servislerinin (Systemd) otomasyonu ve ağ trafiği izleme (Wireshark). Python tabanlı güvenli erişim ve veri depolama yapılandırmaları.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Endüstriyel IoT ve Donanım Mühendisliği</h3>
-                    <p><strong>Donanım Müdahalesi:</strong> Anakart seviyesinde ESP32/ESP8266 entegrasyonu ve lehimleme ile uzaktan kontrol çözümleri.<br>
-                    <strong>Endüstriyel Takip:</strong> Plastik enjeksiyon makineleri için gerçek zamanlı verimlilik ve sıcaklık takip sistemleri prototipleme.<br>
-                    <strong>CNC ve Kalıp Tasarımı:</strong> İmalat süreçlerinde teknik problem çözme ve dijitalleşme çalışmaları.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Veri Tabanı Yönetimi, Ağ Altyapısı ve Güvenliği</h3>
-                    <p>İlişkisel veri tabanı tasarımı (RDBMS), ileri seviye normalizasyon (1NF, 2NF, 3NF), .NET Core framework projelerinde Entity Framework kullanarak kurumsal katmanların yapılandırılması. TCP/IP protokol ailesi analizi; Wireshark ile paket izleme, VLAN kurulumları ve ağ izolasyonu sıkılaştırma (Hardening) çalışmaları.</p>
-                </div>
-            </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                Nevzat <span>Ulaş</span> • <span style="color:var(--color-soft-linen); font-size:0.95rem; font-weight:500;">Yazılım Geliştirici ve Siber Güvenlik Analisti</span>
+            </div>
+            <ul class="footer-links">
+                <li><a href="https://codrya.com" target="_blank" rel="noopener noreferrer">Codrya.com</a></li>
+                <li><a href="https://github.com/nevztab" target="_blank" rel="noopener noreferrer">GitHub (nevztab)</a></li>
+                <li><a href="https://escybersec.com" target="_blank" rel="noopener noreferrer">EsCyberSec</a></li>
+                <li><a href="mailto:nevzat@codrya.com">İletişim (nevzat@codrya.com)</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-bottom">
+            <div>
+                &copy; 2026 <strong>Nevzat Ulaş</strong>. Tüm Hakları Saklıdır. • Yazılım Geliştirici ve Eskişehir Siber Güvenlik Topluluğu Başkan Yardımcısı.
+            </div>
+            <div>
+                İletişim: <a href="mailto:nevzat@codrya.com" style="color:var(--color-flame); text-decoration:none;">nevzat@codrya.com</a>
+            </div>
+        </div>
+    </footer>
 
-            <section class="card">
-                <h2><i class="fas fa-gamepad icon"></i> İlgi Alanları & Hobiler</h2>
-                <ul class="bullet-list">
-                    <li><strong>Elektronik ve Modifikasyon:</strong> Donanım modifikasyonları ve günlük hayatı kolaylaştıran teknolojiler üzerine kişisel çalışmalar.</li>
-                    <li><strong>Gömülü Sistemler ve Robotik:</strong> Raspberry Pi ve Arduino platformları üzerinde akıllı ev çözümleri ve mikrodenetleyici tabanlı donanım prototipleri geliştirme.</li>
-                    <li><strong>Açık Kaynak Katkıları:</strong> GitHub üzerinde siber güvenlik araçlarını, LLM/SOC ajanlarını ve yeni yazılım kütüphanelerini inceleme, topluluk projelerine teknik destek sağlama.</li>
-                </ul>
-            </section>
-
-        </main>
-
-        <footer class="footer">
-            <p>&copy; 2026 <a class="codrya-logo" href="https://codrya.com" target="_blank">&lt;/Codrya&gt;</a> | Tüm Hakları Saklıdır.</p>
-        </footer>
-    </div>
-
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>
